@@ -1,29 +1,46 @@
-@media screen and (max-width: 400px) {
-    .carousel , .carousel .carousel-item  {
-        height: 100vh;
-        width: 100%;
-        background-color: tomato;
+.navbar, footer
+{
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+
+.carousel, .carousel .carousel-item 
+{
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel .carousel-item > img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+main
+{
+    min-height: 100vh;
+}
+
+#services-section>div 
+{
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+/*@media screen and (max-width:400px)
+{
+    #services-section > div {
+        
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
-    /* le , . carousel . carousel-item dans la même ligne équivaut au 
-    .carousel-item {
-        height: 100vh;
-        width: 100%;
-        background-color: tomato;
-    }*/
-
-
-.carousel .carousel-item > img
-
-{
-
-position: absolute;
-top: 0;
-left: 0;
-height: 100vh;
-object-fit: cover;
-object-position: center;
-
 }
-
-}
+*/
